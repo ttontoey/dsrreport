@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "key": "???",   
+    "oauth2": {
+        "client_id": "???.apps.googleusercontent.com",
+        "scopes" : [
+            "profile email",
+           "https://www.googleapis.com/auth/drive"	
+        ]
+    },
+    "name": "DSR Report",
+    "description": "Borbank and Tontoey's powerful extension for monitoring NFT players.",
+    "version": "1.0",
+  
+    "browser_action": {
+     "default_icon": "icon.png",
+     "default_popup": "popup.html"
+    },
+    "permissions": [
+     "activeTab","identity","identity.email"
+     ],
+
+    "background": {
+        "scripts": [
+            "background.js",
+            "lib/jsrsasign/jsrsasign-all-min.js"
+        ]
+    }
+
+     
+
+  }
